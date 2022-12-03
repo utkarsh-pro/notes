@@ -1,0 +1,5 @@
+{{ define "main" }}
+<h1>All Notes</h1>
+{{ $notes := where .Site.RegularPages "Section" "notes" }}
+{{ partial "summary-list" $notes }}
+{{ end }}

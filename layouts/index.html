@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <div>
+    <section class="site-index-intro">
+      <h2>Me</h2>
+      <p>
+        Hello, hello! I am Utkarsh Srivastava. I am a Software Engineer. I already have a blog website at
+        <a href="https://blog.sagacious.dev" class="component-linktext">blog.sagacious.dev</a>. However, this website is different. Here, I am trying
+        to write about the things that I am learning without worrying much about polishing them. I imagine this website to
+        be a "knowledge base" for myself.
+      </p>
+    </section>
+    <section>
+      <h2>Notes</h2>
+      {{ $notes := where .Site.RegularPages "Section" "notes" }}
+      {{ partial "summary-list" $notes }}
+    </section>
+  </div>
+{{ end }}

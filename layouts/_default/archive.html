@@ -1,0 +1,20 @@
+{{ define "main" }}
+<h1>Archive</h1>
+{{ range (where .Site.RegularPages "Section" "notes").GroupByDate "2006" }}
+  {{ $year := .Key }}
+  <h2>{{ $year }}</h2>
+  {{ range .Pages.GroupByDate "2006-01" }}
+    {{ $month := dateFormat "January" (print .Key "-01") }}
+    <ul>
+      <a id="{{ .Key }}"></a>
+      <li>{{ print $month " " $year }}
+        <ul>
+          {{ range .Pages }}
+          {{ partial "summary.html" . }}
+          {{ end }}
+        </ul>
+      </li>
+    </ul>
+  {{ end }}
+{{ end }}
+{{ end }}
