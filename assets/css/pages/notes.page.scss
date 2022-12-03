@@ -1,0 +1,55 @@
+.site-notes-content-container {
+	margin-bottom: 3rem;
+	width: $global-max-width;
+	max-width: 100%;
+}
+
+.site-notes-title {
+	text-align: center;
+	font-size: 2.75rem;
+	margin-bottom: 1rem;
+}
+
+.site-notes-meta {
+	background-color: #eee;
+	padding: 0.75rem;
+	border-radius: 0.375rem;
+	text-align: center;
+	font-size: 0.875rem;
+}
+
+.site-notes-content {
+	margin-bottom: 2rem;
+	width: $global-max-width;
+	max-width: 100%;
+}
+
+.site-notes-content .highlight > * {
+	margin: 1rem auto;
+	padding: 1rem;
+	border-radius: 0.375rem;
+	tab-size: 4;
+}
+.site-notes-content .highlight pre {
+	overflow-x: auto;
+	background-color: transparent !important;
+}
+
+.site-notes-content summary {
+	cursor: pointer;
+}
+.site-notes-content details > * {
+	padding-left: 1rem;
+}
+.site-notes-content details > summary {
+	padding-left: initial;
+}
+
+.site-notes-content a {
+	@extend .component-linktext;
+}
+
+.site-notes-content .katex-display {
+	overflow: auto hidden;
+	font-size: 1.1rem;
+}

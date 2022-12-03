@@ -1,0 +1,24 @@
+code, kbd, pre, samp {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 1rem;
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+
+pre {
+	line-height: 1.45;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+code {
+	color: #d63384;
+	word-wrap: break-word;
+	font-size: 0.875rem;
+}
+
+pre code {
+	font-size: 85%;
+	color: inherit;
+	word-break: normal;
+}
