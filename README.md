@@ -12,3 +12,6 @@ This blog uses:
 1. Hugo for static side generation.
 2. Sass for stylesheets (only because hugo has apparently better support for sass than for good old css).
 3. [Pagefind](https://pagefind.app) for searches.
+
+# Note
+Lack of License on the repository is intentional. I am not sure about the content licensing and site licensing hence no license for now. Until a License is added, this repository remains open code but *unfortunately* not open source.
